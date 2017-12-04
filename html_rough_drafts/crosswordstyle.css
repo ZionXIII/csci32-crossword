@@ -1,0 +1,95 @@
+* {
+    margin: 10px;
+}
+
+header {
+    font-family: "Courier New", Courier, Monospace;
+    text-shadow: 1px 1px #FF0000;
+    color: white;
+    background-color: black;
+    text-indent: 10px;
+}
+
+/*#mainPort {
+    display: inline;
+}*/
+
+/*
+#formSpace {
+    width: 50%;
+}
+*/
+
+/*#userForm {
+    width: 45vw;
+    display: inline-block;
+}*/
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.col {
+    width: 45%;
+}
+
+h3 {
+    font-style: italic;
+    font-weight: normal;
+}
+
+fieldset {
+    border: ridge 3px green;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+input {
+    margin: 5px;
+}
+
+aside {
+    /*width: 45vw;*/
+    border: ridge 3px green;
+    border-radius: 8px;
+}
+
+#puzzlePort {
+    border: solid 1px black;
+    margin: auto;
+}
+
+td {
+    position: relative;
+    margin: 0px;
+    border: solid 1px black;
+    width: 10px;
+    height: 10px;
+}
+
+td > section {
+    position: relative;
+    top: -10px;
+    left: -7px;
+    font-size: 0.5em;
+    font-weight: bold;
+}
+
+.letter {
+    position: relative;
+    top: -22px;
+    left: -3px;
+}
+
+footer {
+    text-shadow: 1px 1px #FF0000;
+    color: white;
+    background-color: black;
+    font-style: italic;
+    text-indent: 10px;
+}
