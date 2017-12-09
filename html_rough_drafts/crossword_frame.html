@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crossword Generator Main Page</title>
     <link rel="stylesheet" type="text/css" href="crosswordstyle.css">
-   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>-->
@@ -17,13 +18,15 @@
     <!-- Title Bar -->
     <header>
         <div class="headerBox">
+            <!-- Site Title -->
             <div class="siteTitle">
                 <h1>The Crossword Maker!</h1>
-                <img src="/images/Site_Logo.JPG" alt="The Crossword Maker!" >
+                <img src="../public/images/crossword_logo_2.png" alt="The Crossword Maker!" >
             </div>
             <div class="username">
+                <!-- Login Box -->
                 <div id="signedOut">
-                    <form>
+                    <form onsubmit="logIn()">
                         <fieldset>
                             <legend>Account Login</legend>
                             Username: <input type="text" id="uname"><br>
@@ -33,8 +36,9 @@
                         </fieldset>
                     </form>
                 </div>
+                <!-- Logged In Avatar and User Display -->
                 <div id="signedIn">
-                    <img src="/images/users.png" alt="profile avatar" >
+                    <img src="../public/images/users.png" alt="profile avatar" >
                     <a id="user"></a>
                 </div>
             </div>
@@ -56,14 +60,14 @@
                         <fieldset>
                             <legend>Crossword Generation Form</legend>
                             Please enter an appropriate title.<br>
-                            Title: <input type="text" name="puzzleTitle"><br> 
+                            Title: <input type="text" placeholder="puzzle title" name="puzzleTitle"><br> 
                             Please enter at least 3 words.<br> 
-                            Word 1: <input type="text" name="word1"><br>
-                            <textarea name="hint1" rows="3" cols="26">Enter a hint or clue.</textarea><br> 
-                            Word 2: <input type="text" name="word2"><br>
-                            <textarea name="hint2" rows="3" cols="26">Enter a hint or clue.</textarea><br> 
-                            Word 3: <input type="text" name="word3"><br>
-                            <textarea name="hint3" rows="3" cols="26">Enter a hint or clue.</textarea><br>
+                            Word 1: <input type="text" placeholder="first word" name="word1"><br>
+                            <textarea name="hint1" rows="3" cols="26">Enter hint or clue...</textarea><br> 
+                            Word 2: <input type="text" placeholder="second word" name="word2"><br>
+                            <textarea name="hint2" rows="3" cols="26">Enter hint or clue...</textarea><br> 
+                            Word 3: <input type="text" placeholder="third word" name="word3"><br>
+                            <textarea name="hint3" rows="3" cols="26">Enter hint or clue...</textarea><br>
                             <a href="">+ Add Word/Hint</a><br>
                             <a href="">- Delete Word/Hint</a><br>
                             <button type="submit">Submit</button>
@@ -711,6 +715,7 @@
                         </td>
                     </tr>
                 </table>
+                <!-- Puzzle Hints -->
                 <div id="hintList">
                     <h4>Down</h4>
                     <ol>
@@ -724,14 +729,34 @@
                 </div>
             </aside>
         </section>
+        <!-- Archive Section -->
+        <section id="archiveBlock">
+            <h3>View our archives....</h3>
+            <button onclick="upDown()">Show / Hide Archive</button>
+            <article id="archive">
+                <h4>Archive</h4>
+                <form action="">
+                  <input type="text" placeholder="Search archive..." name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                  <button type="reset"><i class="fa fa-eraser"></i></button>
+                </form>   
+                <ul>
+                    <li><h5 class="accountName">captJackSparrow</h5>12/20/2017<br>
+                    <img src="../public/images/crossword_ex_1.png" alt="submission001" ></li>
+                    <li><h5 class="accountName">kingkong008</h5>3/26/2018<br>
+                    <img src="../public/images/crossword_ex_2.jpg" alt="submission002" ></li>
+                </ul>
+            </article>
+        </section>
+        <!-- Comment Section -->
         <section id="commentBlock">
             <h3>Leave a comment....</h3>
             <form>
                 <fieldset>
                     <legend>Guestbook Submission</legend>
-                    Name or Alias: <input type="text" name="guestName"><br>
+                    Name or Alias: <input type="text" placeholder="John Doe" name="guestName"><br>
                     <!--Comment Box<br>-->
-                    <textarea name="hint1" rows="4" cols="60">Enter comment.</textarea><br> 
+                    <textarea name="hint1" rows="4" cols="60">Enter comment...</textarea><br> 
                     <button type="submit">Submit</button>
                     <button type="reset">Reset</button>
                 </fieldset>
@@ -757,22 +782,36 @@
         <p>A puzzle maker by the people, for the people.</p>
     </footer>
     <script>
-        // Log in pop-up:
+        // Login pop-up:
         function logIn() {
-            var name = document.getElementById("uname");
-            var pass = document.getElementById("password");
+            var name = document.getElementById("uname").innerHTML;
+            var pass = document.getElementById("password").innerHTML;
             var sOut = document.getElementById("signedOut");
             var sIn = document.getElementById("signedIn");
             
             if (name != null && pass != null) {
-               sOut.classList.toggle("hide");
-               sIn.classList.toggle("show");
+                sOut.style.display = "none";
+                sIn.style.display = "block";
+               /*sOut.classList.toggle("hide");
+               sIn.classList.toggle("show");*/
+            }
+        }
+        
+        // Archive button function:
+        function upDown() {
+            var y = document.getElementById("archive");
+            
+            if (y.style.display === "none") {
+                y.style.display = "block";
+            } else {
+                y.style.display = "none";
             }
         }
         
         // Guestbook button function:
         function showHide() {
             var x = document.getElementById("guestBook");
+            
             if (x.style.display === "none") {
                 x.style.display = "block";
             } else {

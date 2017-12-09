@@ -3,6 +3,10 @@
 }
 
 header {
+    /*position: fixed;
+    top: 10px;
+    right: 10px;
+    left: 10px;*/
     font-family: "Courier New", Courier, Monospace;
     text-shadow: 1px 1px #FF0000;
     color: white;
@@ -18,17 +22,16 @@ header {
 .siteTitle {
     margin: auto;
     width: 65%;
+    font-size: 1.3em;
 }
 
 .siteTitle > h1 {
     display: inline;
 }
 
-.siteTitle > img {
-    width: 30px;
-    height: 40px;
+/*.siteTitle > img {
     display:inline;
-}
+}*/
 
 .username {
     margin: auto;
@@ -36,23 +39,31 @@ header {
 }
 
 .username > img {
-    background-color: red;
+    width: 40px;
+    height: 36px;
+    background-color: white;
+}
+
+#signedIn > img {
+    width: 40px;
+    height: 36px;
+    background-color: white;
 }
 
 #signedOut {
-    visibility: visible;
+    display: block;
 }
 
 #signedOut .hide {
-    visibility: hidden;
+    display: none;
 }
 
 #signedIn {
-    visibility: hidden;
+    display: none;
 }
 
 #signedIn .show{
-    visibility: visible;
+    display: block;
 }
 
 /*#mainPort {
@@ -78,6 +89,13 @@ header {
 /*.col {
     width: 45%;
 }*/
+
+input, textarea {
+    border: solid 1px black;
+    color: black;
+    font-size: 0.9em;
+    text-indent: 2px;
+}
 
 #userForm {
     width: 30%;
@@ -116,15 +134,16 @@ a:visited {
 
 a:hover {
     color: blue;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 a:active {
     color: yellow;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 button {
+    margin: 2px;
     font-size: 1.0em;
     font-weight: bold;
     background-color: #f2f2f2;
@@ -184,16 +203,29 @@ td > section {
     margin: .5em;
 }
 
-#commentBlock {
+#archiveBlock {
     border-top: solid 2px black;
+    margin-bottom: 20px;
 }
 
-footer {
-    text-shadow: 1px 1px #FF0000;
-    color: white;
-    background-color: black;
-    font-style: italic;
-    text-indent: 10px;
+#archive {
+    border: double 4px black;
+}
+
+#archive > h4 {
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+li > img {
+    height: 400px;
+    width: 450px;
+    border: solid 1px #F00;
+}
+
+#commentBlock {
+    border-top: solid 2px black;
+    margin-bottom: 20px;
 }
 
 .column {
@@ -212,6 +244,20 @@ footer {
 #guestBook > h4 {
     font-size: 1.2em;
     text-decoration: underline;
+}
+
+footer {
+    /*position: fixed;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;*/
+    padding: 10px;
+    text-shadow: 1px 1px #FF0000;
+    color: white;
+    background-color: black;
+    font-style: italic;
+    font-size: 1.2em;
+    text-indent: 10px;
 }
 
 #bottom {
