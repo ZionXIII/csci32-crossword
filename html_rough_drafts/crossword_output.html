@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crossword Generator Output Page</title>
+    <link rel="stylesheet" type="text/css" href="crosswordstyle.css">
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>-->
+</head>
+<body>
+    <!-- Title Bar -->
+    <header>
+        <div class="headerBox">
+            <div class="siteTitle">
+                <h1>The Crossword Maker!</h1>
+                <img src="images/Site_Logo.JPG" alt="The Crossword Maker!" >
+            </div>
+            <div class="username">
+                <img src="images/users.png" alt="profile avatar" >
+                <a>username</a>
+            </div>
+        </div>
+    </header>
+    <!-- Main Section -->
+    <section id="mainPort" class="row">
+        <!-- Generated Blank Puzzle -->
+        <section class="column">
+            <h3>Crossword Puzzle</h3>
+            <div id="crosswordPuzzle">
+                <div id="crosswordPort">
+                    <!-- Puzzle Title -->
+                    <h2 class="puzzleTitle">Puzzle Title</h2>
+                    <!-- Inner Guide Grid  -->
+                    <table class="puzzlePort">
+                        <!-- Row 1 -->
+                        <tr>
+                            <td>
+                                <section>1</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>2</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>3</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>4</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>5</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>6</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>7</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>8</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>9</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>10</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>11</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>12</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>13</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>14</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>15</section>
+                                <div class="letter">T</div>
+                            </td>
+                        </tr>
+                        <!-- Row 2 -->
+                        <tr>
+                            <td>
+                                <section>1</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>2</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>3</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>4</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>5</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>6</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>7</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>8</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>9</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>10</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>11</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>12</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>13</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>14</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>15</section>
+                                <div class="letter">T</div>
+                            </td>
+                        </tr>
+                        <!-- Row 3 -->
+                        <tr>
+                            <td>
+                                <section>1</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>2</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>3</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>4</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>5</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>6</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>7</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>8</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>9</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>10</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>11</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>12</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>13</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>14</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>15</section>
+                                <div class="letter">T</div>
+                            </td>
+                        </tr>
+                        <!-- Row 4 -->
+                        <tr>
+                            <td>
+                                <section>1</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>2</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>3</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>4</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>5</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>6</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>7</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>8</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>9</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>10</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>11</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>12</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>13</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>14</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>15</section>
+                                <div class="letter">T</div>
+                            </td>
+                        </tr>
+                        <!-- Row 5 -->
+                        <tr>
+                            <td>
+                                <section>1</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>2</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>3</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>4</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>5</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>6</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>7</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>8</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>9</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>10</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>11</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>12</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>13</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>14</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>15</section>
+                                <div class="letter">T</div>
+                            </td>
+                        </tr>
+                        <!-- Row 6 -->
+                        <tr>
+                            <td>
+                                <section>1</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>2</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>3</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>4</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>5</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>6</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>7</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>8</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>9</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>10</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>11</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>12</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>13</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>14</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>15</section>
+                                <div class="letter">T</div>
+                            </td>
+                        </tr>
+                        <!-- Row 7 -->
+                        <tr>
+                            <td>
+                                <section>1</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>2</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>3</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>4</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>5</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>6</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>7</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>8</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>9</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>10</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>11</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>12</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>13</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>14</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>15</section>
+                                <div class="letter">T</div>
+                            </td>
+                        </tr>
+                        <!-- Row 8 -->
+                        <tr>
+                            <td>
+                                <section>1</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>2</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>3</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>4</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>5</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>6</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>7</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>8</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>9</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>10</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>11</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>12</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>13</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>14</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>15</section>
+                                <div class="letter">T</div>
+                            </td>
+                        </tr>
+                        <!-- Row 9 -->
+                        <tr>
+                            <td>
+                                <section>1</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>2</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>3</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>4</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>5</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>6</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>7</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>8</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>9</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>10</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>11</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>12</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>13</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>14</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>15</section>
+                                <div class="letter">T</div>
+                            </td>
+                        </tr>
+                        <!-- Row 10 -->
+                        <tr>
+                            <td>
+                                <section>1</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>2</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>3</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>4</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>5</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>6</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>7</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>8</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>9</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>10</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>11</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>12</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>13</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>14</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>15</section>
+                                <div class="letter">T</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="hintList">
+                    <h4>Down</h4>
+                    <ol>
+                        <li>hint</li>
+                        <li>hint</li>
+                    </ol>
+                    <h4>Across</h4>
+                    <ol>
+                        <li>hint</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <!-- Generated Answer Puzzle -->
+        <section class="column">
+            <h3>Answer Key</h3>
+            <div id="crosswordAnswer">
+                <div id="answerPort">
+                    <!-- Puzzle Title -->
+                    <h2 class="puzzleTitle">Puzzle Title</h2>
+                    <!-- Inner Guide Grid  -->
+                    <table class="puzzlePort">
+                        <!-- Row 1 -->
+                        <tr>
+                            <td>
+                                <section>1</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>2</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>3</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>4</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>5</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>6</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>7</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>8</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>9</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>10</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>11</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>12</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>13</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>14</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>15</section>
+                                <div class="letter">T</div>
+                            </td>
+                        </tr>
+                        <!-- Row 2 -->
+                        <tr>
+                            <td>
+                                <section>1</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>2</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>3</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>4</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>5</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>6</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>7</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>8</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>9</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>10</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>11</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>12</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>13</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>14</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>15</section>
+                                <div class="letter">T</div>
+                            </td>
+                        </tr>
+                        <!-- Row 3 -->
+                        <tr>
+                            <td>
+                                <section>1</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>2</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>3</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>4</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>5</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>6</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>7</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>8</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>9</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>10</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>11</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>12</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>13</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>14</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>15</section>
+                                <div class="letter">T</div>
+                            </td>
+                        </tr>
+                        <!-- Row 4 -->
+                        <tr>
+                            <td>
+                                <section>1</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>2</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>3</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>4</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>5</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>6</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>7</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>8</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>9</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>10</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>11</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>12</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>13</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>14</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>15</section>
+                                <div class="letter">T</div>
+                            </td>
+                        </tr>
+                        <!-- Row 5 -->
+                        <tr>
+                            <td>
+                                <section>1</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>2</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>3</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>4</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>5</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>6</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>7</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>8</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>9</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>10</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>11</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>12</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>13</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>14</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>15</section>
+                                <div class="letter">T</div>
+                            </td>
+                        </tr>
+                        <!-- Row 6 -->
+                        <tr>
+                            <td>
+                                <section>1</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>2</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>3</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>4</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>5</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>6</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>7</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>8</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>9</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>10</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>11</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>12</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>13</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>14</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>15</section>
+                                <div class="letter">T</div>
+                            </td>
+                        </tr>
+                        <!-- Row 7 -->
+                        <tr>
+                            <td>
+                                <section>1</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>2</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>3</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>4</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>5</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>6</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>7</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>8</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>9</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>10</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>11</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>12</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>13</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>14</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>15</section>
+                                <div class="letter">T</div>
+                            </td>
+                        </tr>
+                        <!-- Row 8 -->
+                        <tr>
+                            <td>
+                                <section>1</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>2</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>3</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>4</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>5</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>6</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>7</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>8</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>9</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>10</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>11</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>12</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>13</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>14</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>15</section>
+                                <div class="letter">T</div>
+                            </td>
+                        </tr>
+                        <!-- Row 9 -->
+                        <tr>
+                            <td>
+                                <section>1</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>2</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>3</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>4</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>5</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>6</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>7</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>8</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>9</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>10</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>11</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>12</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>13</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>14</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>15</section>
+                                <div class="letter">T</div>
+                            </td>
+                        </tr>
+                        <!-- Row 10 -->
+                        <tr>
+                            <td>
+                                <section>1</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>2</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>3</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>4</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>5</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>6</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>7</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>8</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>9</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>10</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>11</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>12</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>13</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>14</section>
+                                <div class="letter">T</div>
+                            </td>
+                            <td>
+                                <section>15</section>
+                                <div class="letter">T</div>
+                            </td>
+                        </tr>
+                    </table> 
+                </div>
+                <div id="answerList">
+                    <h4>Down</h4>
+                    <ol>
+                        <li>hint</li>
+                        <li>hint</li>
+                    </ol>
+                    <h4>Across</h4>
+                    <ol>
+                        <li>hint</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section id="bottom">
+        <!-- Return Home Button -->
+        <a href="">Home</a>
+    </section>
+    <!-- Footer Bar -->
+    <footer>
+        <p>A puzzle maker by the people, for the people.</p>
+    </footer>
+</body>
+</html>

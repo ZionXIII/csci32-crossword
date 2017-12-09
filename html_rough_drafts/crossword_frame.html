@@ -16,8 +16,29 @@
 <body>
     <!-- Title Bar -->
     <header>
-        <h1>The Crossword Maker!</h1>
-        <!--<img src="images/Logo_Title" alt="The Crossword Maker!" >-->
+        <div class="headerBox">
+            <div class="siteTitle">
+                <h1>The Crossword Maker!</h1>
+                <img src="/images/Site_Logo.JPG" alt="The Crossword Maker!" >
+            </div>
+            <div class="username">
+                <div id="signedOut">
+                    <form>
+                        <fieldset>
+                            <legend>Account Login</legend>
+                            Username: <input type="text" id="uname"><br>
+                            Password: <input type="password" id="password"><br>
+                            <button onclick="logIn()">Submit</button>
+                            <button type="reset">Reset</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div id="signedIn">
+                    <img src="/images/users.png" alt="profile avatar" >
+                    <a id="user"></a>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- Main Section -->
     <section id="mainPort" class="container">
@@ -34,19 +55,31 @@
                     <form>
                         <fieldset>
                             <legend>Crossword Generation Form</legend>
-                            Please enter at least 3 words.<br> Word 1: <input type="text" name="word1"><br> Word 2: <input type="text" name="word2"><br> Word 3: <input type="text" name="word3"><br>
-                            <a href="">+ Add Word</a><br>
-                            <a href="">- Delete Word</a><br>
-                            <input type="submit" value="Submit">
-                            <input type="reset">
+                            Please enter an appropriate title.<br>
+                            Title: <input type="text" name="puzzleTitle"><br> 
+                            Please enter at least 3 words.<br> 
+                            Word 1: <input type="text" name="word1"><br>
+                            <textarea name="hint1" rows="3" cols="26">Enter a hint or clue.</textarea><br> 
+                            Word 2: <input type="text" name="word2"><br>
+                            <textarea name="hint2" rows="3" cols="26">Enter a hint or clue.</textarea><br> 
+                            Word 3: <input type="text" name="word3"><br>
+                            <textarea name="hint3" rows="3" cols="26">Enter a hint or clue.</textarea><br>
+                            <a href="">+ Add Word/Hint</a><br>
+                            <a href="">- Delete Word/Hint</a><br>
+                            <button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
+                            <!--<input type="submit" value="Submit">
+                            <input type="reset">-->
                         </fieldset>
                     </form>
                 </section>
             </section>
             <!-- Aside Puzzle Viewing Window -->
             <aside class="col">
+                <!-- Puzzle Title -->
+                <h2 class="puzzleTitle">Puzzle Title</h2>
                 <!-- Inner Guide Grid  -->
-                <table id="puzzlePort">
+                <table class="puzzlePort">
                     <!-- Row 1 -->
                     <tr>
                         <td>
@@ -87,6 +120,26 @@
                         </td>
                         <td>
                             <section>10</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>11</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>12</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>13</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>14</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>15</section>
                             <div class="letter">T</div>
                         </td>
                     </tr>
@@ -132,6 +185,26 @@
                             <section>10</section>
                             <div class="letter">T</div>
                         </td>
+                        <td>
+                            <section>11</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>12</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>13</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>14</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>15</section>
+                            <div class="letter">T</div>
+                        </td>
                     </tr>
                     <!-- Row 3 -->
                     <tr>
@@ -173,6 +246,26 @@
                         </td>
                         <td>
                             <section>10</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>11</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>12</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>13</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>14</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>15</section>
                             <div class="letter">T</div>
                         </td>
                     </tr>
@@ -218,6 +311,26 @@
                             <section>10</section>
                             <div class="letter">T</div>
                         </td>
+                        <td>
+                            <section>11</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>12</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>13</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>14</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>15</section>
+                            <div class="letter">T</div>
+                        </td>
                     </tr>
                     <!-- Row 5 -->
                     <tr>
@@ -259,6 +372,26 @@
                         </td>
                         <td>
                             <section>10</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>11</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>12</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>13</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>14</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>15</section>
                             <div class="letter">T</div>
                         </td>
                     </tr>
@@ -304,6 +437,26 @@
                             <section>10</section>
                             <div class="letter">T</div>
                         </td>
+                        <td>
+                            <section>11</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>12</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>13</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>14</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>15</section>
+                            <div class="letter">T</div>
+                        </td>
                     </tr>
                     <!-- Row 7 -->
                     <tr>
@@ -345,6 +498,26 @@
                         </td>
                         <td>
                             <section>10</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>11</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>12</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>13</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>14</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>15</section>
                             <div class="letter">T</div>
                         </td>
                     </tr>
@@ -390,6 +563,26 @@
                             <section>10</section>
                             <div class="letter">T</div>
                         </td>
+                        <td>
+                            <section>11</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>12</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>13</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>14</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>15</section>
+                            <div class="letter">T</div>
+                        </td>
                     </tr>
                     <!-- Row 9 -->
                     <tr>
@@ -431,6 +624,26 @@
                         </td>
                         <td>
                             <section>10</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>11</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>12</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>13</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>14</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>15</section>
                             <div class="letter">T</div>
                         </td>
                     </tr>
@@ -476,15 +689,97 @@
                             <section>10</section>
                             <div class="letter">T</div>
                         </td>
+                        <td>
+                            <section>11</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>12</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>13</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>14</section>
+                            <div class="letter">T</div>
+                        </td>
+                        <td>
+                            <section>15</section>
+                            <div class="letter">T</div>
+                        </td>
                     </tr>
                 </table>
+                <div id="hintList">
+                    <h4>Down</h4>
+                    <ol>
+                        <li>hint</li>
+                        <li>hint</li>
+                    </ol>
+                    <h4>Across</h4>
+                    <ol>
+                        <li>hint</li>
+                    </ol>
+                </div>
             </aside>
+        </section>
+        <section id="commentBlock">
+            <h3>Leave a comment....</h3>
+            <form>
+                <fieldset>
+                    <legend>Guestbook Submission</legend>
+                    Name or Alias: <input type="text" name="guestName"><br>
+                    <!--Comment Box<br>-->
+                    <textarea name="hint1" rows="4" cols="60">Enter comment.</textarea><br> 
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </fieldset>
+            </form>
+            <article>
+                <button onclick="showHide()">Show / Hide Guestbook</button>
+                <div id="guestBook">
+                    <h4>Guestbook</h4>
+                    <ul>
+                        <li><h5 class="commentName">John Smith</h5>12/10/2018<br>
+                        Your website sucks...</li>
+                        <li><h5 class="commentName">Joe Blow</h5>1/26/2019<br>
+                        Your website ROCKS!</li>
+                        <li><h5 class="commentName">anonymous</h5>5/17/2019<br>
+                        blaaaaah</li>
+                    </ul>
+                </div>
+            </article>
         </section>
     </section>
     <!-- Footer Bar -->
     <footer>
         <p>A puzzle maker by the people, for the people.</p>
     </footer>
+    <script>
+        // Log in pop-up:
+        function logIn() {
+            var name = document.getElementById("uname");
+            var pass = document.getElementById("password");
+            var sOut = document.getElementById("signedOut");
+            var sIn = document.getElementById("signedIn");
+            
+            if (name != null && pass != null) {
+               sOut.classList.toggle("hide");
+               sIn.classList.toggle("show");
+            }
+        }
+        
+        // Guestbook button function:
+        function showHide() {
+            var x = document.getElementById("guestBook");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
