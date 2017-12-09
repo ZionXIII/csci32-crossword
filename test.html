@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style>
+#puzzel {
+	width:330px;
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+#cross{
+	text-align: center;
+	width:30px;
+	height:30px;
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	border: 1px solid white;
+}
+
+
+#buttons{
+	width:30%;
+	float: right;
+
+}
+tr{
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+}
+#leftBox{
+	float: left;	
+}
+#rightBox{
+	float: left;
+}
+#butt{
+	width: 100px;
+}
+
+</style>
+
+<script>
+</script>
+</head>
+<body>
+
+<div id="puzzle_container">
+    <table id="puzzle">
+    </table>
+</div>
+
+<div id="hints_container">
+    <h3>Vertical</h3>
+        <div id="vertical_hints_container"></div>
+    <h3>Horizontal</h3>
+        <div id="horizontal_hints_container"></div>
+</div>
+
+<div id="buttons_container">
+    <button id="clear_all">Clear All</button>
+    <button id="check">Check</button>
+    <button id="solve">Solve</button>
+    <button id="clue">Clue</button>
+</div>    
+</body>
+</html>
