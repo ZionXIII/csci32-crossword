@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* GET print page. */
 router.get('/', function(req, res, next) {
-  res.render('printout', { title: 'Puzzle Printout' });
+  res.render('puzzle_print', { title: 'Puzzle Printout' });
 });
 
 module.exports = router;

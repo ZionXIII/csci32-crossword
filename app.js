@@ -30,7 +30,7 @@ app.use('/', index);
 
 // UNCOMMENT A COMPLETED
 app.use('/puzzle-creator', editer);
-app.use('/printout', print);
+app.use('/print-out', print);
 app.use('/search-archive', archive);
 
 // catch 404 and forward to error handler
