@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Crossword Puzzle Maker' });
+  res.render('puzzle_editer', { title: 'Puzzle Creator' });
 });
 
 module.exports = router;
