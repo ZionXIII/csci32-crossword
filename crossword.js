@@ -25,7 +25,9 @@ var compare = '';
 
 
 function wordCompare(string1, string2) {
+    // return -1 = failstate, no shared letters
     compare = [-1, -1];
+    // for testing
     console.log(string1 + string2 + ' Wabuu');
     for (var i = 0; i < string1.length; i++) {
         if (string2.indexOf(string1.charAt(i)) >= 0) {
@@ -41,13 +43,16 @@ function wordCompare(string1, string2) {
 
 function getItem(string1, string2) {
     //across and down are word cross value + distance
+    // value == match; distance == X-distance in graph
     var across;
     var down;
     wordCompare(string1, string2);
+    // Sets test to matching letter: first letter in global var compare
     var test = compare[0];
     //down_count and across_count are other distance
     var down_count = 0;
     var across_count = 0;
+    // Writing to Puzzle Graph
     //set wordcompare
     if (test > -1) {
         //crossing value
