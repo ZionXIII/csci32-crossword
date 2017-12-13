@@ -1,9 +1,9 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
+var express      = require('express');
+var path         = require('path');
+var favicon      = require('serve-favicon');
+var logger       = require('morgan');
 var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+var bodyParser   = require('body-parser');
 
 var index   = require('./routes/index');
 var editer  = require('./routes/editer');
@@ -25,8 +25,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/stylesheets-pure', express.static(__dirname + '/node_modules/purecss/build/'));
-app.use('/stylesheets-pure', express.static(__dirname + '/node_modules/normalize.css/'))
+app.use('/stylesheets-pure', express.static(path.join(__dirname, '/node_modules/purecss/build/')));
+app.use('/stylesheets-pure', express.static(path.join(__dirname, '/node_modules/normalize.css/')));
 
 app.use('/', index);
 app.use('/puzzle-creator', editer);
