@@ -1,19 +1,21 @@
-<!-- PLACEHOLDER :: Fill in later! -->
 <!DOCTYPE html>
 <html>
   <head>
     <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets-pure/normalize.css' />
+    <link rel='stylesheet' href='/stylesheets-pure/pure-min.css' />
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
       <header>
         <h1><%= title %></h1>
-        <nav>
-          <ul>
-            <li><a href="/">index</a></li>
-            <li><a href="/puzzle-creator">editer</a></li>
-            <li><a href="/print-out">print</a></li>
-            <li><a href="/search-archive">search</a></li>
+        <nav class='pure-menu pure-menu-horizontal'>
+          <ul class='pure-menu-list'>
+            <li class='pure-menu-item'><a href="/" class='pure-menu-link'>Home</a></li>
+            <li class='pure-menu-item'><a href="/puzzle-creator" class='pure-menu-link'>Editer</a></li>
+            <li class='pure-menu-item'><a href="/print-out" class='pure-menu-link'>Print</a></li>
+            <li class='pure-menu-item'><a href="/search-archive" class='pure-menu-link'>Search</a></li>
+            <li class='pure-menu-item'><a href="/authentication" class='pure-menu-link'>Authentication</a></li>
           </ul>
         </nav>
       </header>

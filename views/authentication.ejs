@@ -1,0 +1,43 @@
+  <% include includes/header %>
+  
+    <p>Welcome to <%= title %></p>
+    <% if (user != '' && pass != '') { %>
+    <p>Username: <%= user %></p>
+    <p>Password: <%= pass %></p>
+    <% } %>
+    
+    <form action='/login' id='login' method='post' class='pure-form pure-form-aligned'>
+        <fieldset>
+            <legend>Returning Users</legend>
+            <div class='pure-control-group'>
+                <label for='name'>Username</label>
+                <input name='username' id='password' type='text' placeholder='Riddler'>
+            </div>
+            <div class='pure-control-group'>
+                <label for='password'>Password</label>
+                <input name='password' id='password' type='password' placeholder='Password'>
+            </div>
+            <div class='pure-controls'>
+                <button type='submit' class='pure-button pure-button-primary'>Login</button>
+            </div>
+        </fieldset>
+    </form>
+    <hr/>
+    <form action='/signup' name='signup' method='post' class='pure-form pure-form-aligned'>
+        <fieldset>
+            <legend>New Users</legend>
+            <div class='pure-control-group'>
+                <label for='name'>Username</label>
+                <input name='username' id='username' type='text' placeholder='Riddler'>
+            </div>
+            <div class='pure-control-group'>
+                <label for='password'>Password</label>
+                <input name='password' id='password' type='password' placeholder='Password'>
+            </div>
+            <div class='pure-controls'>
+                <button type='submit' class='pure-button pure-button-primary'>Sign Up</button>
+            </div>
+        </fieldset>
+    </form>
+    
+  <% include includes/footer %>

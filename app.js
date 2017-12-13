@@ -5,12 +5,11 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var index  = require('./routes/index');
-
-// UNCOMMENT A COMPLETED
-var editer = require('./routes/editer');
-var print  = require('./routes/print');
+var index   = require('./routes/index');
+var editer  = require('./routes/editer');
+var print   = require('./routes/print');
 var archive = require('./routes/archive');
+var auth    = require('./routes/authentication');
 
 var app = express();
 
@@ -19,16 +18,17 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 // uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', index);
+app.use('/stylesheets-pure', express.static(__dirname + '/node_modules/purecss/build/'));
+app.use('/stylesheets-pure', express.static(__dirname + '/node_modules/normalize.css/'))
 
-// UNCOMMENT A COMPLETED
+app.use('/', index);
 app.use('/puzzle-creator', editer);
 app.use('/print-out', print);
 app.use('/search-archive', archive);
