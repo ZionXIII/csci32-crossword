@@ -1,5 +1,29 @@
-<!-- PLACEHOLDER :: Fill in later! -->
   <% include includes/header %>
     <p>Welcome to <%= title %></p>
+    
+    <section name="hints">
+      
+    </section>
+    
+    <section name="puzzle">
+      <form class="pure-form">  
+        <div class="pure-g">
+          <% for (var row = 0; row < 12; row++) { %>
+            <div class="puzzle-row">
+              <% for (var col = 0; col < 12; col++) { %>
+                <div class="pure-u-1-12 puzzle-unit">
+                  <div class="puzzle-number">
+                    <!-- MAYBE LEAVE THIS OUT, AND LET IT BE AUTOMATIC
+                          AFTER THE USER MAKES THE PUZZLE? TOP-LEFT->BOTTOM-RIGHT?
+                          -->
+                  </div>
+                    <input class="pure-input-1" type="text">
+                </div>
+              <% } %>
+            </div>
+          <% } %>
+        </div>
+      </form>
+    </section>
     
   <% include includes/footer %>
