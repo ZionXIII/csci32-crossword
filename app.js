@@ -12,7 +12,7 @@ var index   = require('./routes/index');
 var editer  = require('./routes/editer');
 var print   = require('./routes/print');
 var archive = require('./routes/archive');
-var auth    = require('./routes/authentication');
+var authentication = require('./routes/authentication');
 
 var app = express();
 
@@ -41,7 +41,7 @@ app.use('/', index);
 app.use('/puzzle-creator', editer);
 app.use('/print-out', print);
 app.use('/search-archive', archive);
-// app.use('/authentication', auth);
+app.use('/authentication', authentication);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

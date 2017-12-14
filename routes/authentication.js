@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
     =================================================
 */
 
-// /* GET authentication page */
+/* GET authentication page */
 router.get('/authentication', function(req, res, next) {
     res.render('authentication', {title: 'Authentication Page', user: '', pass: ''});
 })
