@@ -5,3 +5,5 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Crossword Puzzle Maker' });
 });
+
+module.exports = router;
