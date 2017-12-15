@@ -5,8 +5,7 @@ var logger       = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser   = require('body-parser');
 
-// var logged_in_checker = require('./login_handling/logged_in.js');
-// var login_helper      = require('./login_handling/login_helper.js')
+var passport     = require('passport');
 
 var index   = require('./routes/index');
 var editer  = require('./routes/editer');
@@ -16,13 +15,10 @@ var authentication = require('./routes/authentication');
 
 var app = express();
 
-// app.locals.login_helper = login_helper;
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-// uncomment after placing your favicon in /public
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -30,12 +26,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(passport.initialize());
+app.use(passport.session());
 
 app.use('/stylesheets-pure', express.static(path.join(__dirname, '/node_modules/purecss/build/')));
 app.use('/stylesheets-pure', express.static(path.join(__dirname, '/node_modules/normalize.css/')));
-
-// Handles User Login Cookie Data
-// app.use(logged_in_checker.logged_in);
 
 app.use('/', index);
 app.use('/puzzle-creator', editer);

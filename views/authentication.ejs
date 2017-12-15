@@ -1,10 +1,6 @@
   <% include includes/header %>
   
     <p>Welcome to <%= title %></p>
-    <% if (user != '' && pass != '') { %>
-    <p>Username: <%= user %></p>
-    <p>Password: <%= pass %></p>
-    <% } %>
     
     <form action='/authentication/login' id='/login' method='post' class='pure-form pure-form-aligned'>
         <fieldset>
